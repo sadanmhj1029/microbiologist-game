@@ -1,7 +1,7 @@
 export default function App() {
   return (
-    <div style={{ color: "white", padding: 40 }}>
-      App is rendering
+    <div style={{color: "black", fontSize: 40}}>
+      APP IS RENDERING
     </div>
-  );
+  )
 }
