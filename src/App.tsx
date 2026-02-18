@@ -381,8 +381,17 @@ const App: React.FC = () => {
   };
 
   if (!isStarted) {
-    return <LandingPage onStart={handleStartGame} />;
-  }
+  return <LandingPage onStart={handleStartGame} />;
+}
+
+if (activeRoundQuestions.length === 0) {
+  return (
+    <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">
+      Loading questions...
+    </div>
+  );
+}
+
 
   if (gameState.isGameOver) {
     const isBigWin = gameState.moneyEarned >= 1000000;
