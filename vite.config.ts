@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/microbiologist-game/",
+  base: "/",   // ✅ change this
   build: {
     rollupOptions: {
       input: path.resolve(__dirname, 'index.html')
