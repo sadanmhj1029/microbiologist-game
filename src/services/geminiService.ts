@@ -1,6 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import type { Question } from "../types";
 
+
 export const askTheExpert = async (question: Question): Promise<string> => {
   try {
     const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
