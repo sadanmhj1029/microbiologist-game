@@ -1,9 +1,5 @@
 
-export enum Difficulty {
-  EASY = 'EASY',
-  MEDIUM = 'MEDIUM',
-  HARD = 'HARD'
-}
+export type Difficulty = "EASY" | "MEDIUM" | "HARD";
 
 export interface Question {
   id: number;

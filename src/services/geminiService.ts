@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import type { Question } from "./types";
+import type { Question } from "../types";
 
 export const askTheExpert = async (question: Question): Promise<string> => {
   try {
